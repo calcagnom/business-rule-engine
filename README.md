@@ -1,0 +1,1 @@
+A business rule engine for the evaluation of complex conditions

@@ -1,0 +1,28 @@
+{
+  "name": "business-rule-engine",
+  "version": "0.0.0-beta",
+  "description": "an engine for rules evaluation",
+  "main": "dist/index.ts",
+  "scripts": {
+    "test": "npm run test",
+	"build": "tsc",
+	"ci": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calcagnom/business-rule-engine.git"
+  },
+  "keywords": [
+    "rule",
+    "engine",
+	"rule engine"
+  ],
+  "author": "calcagnom",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calcagnom/business-rule-engine/issues"
+  },
+  "homepage": "https://github.com/calcagnom/business-rule-engine#readme",
+  "files": ["dist"],
+  "type": "module"
+}
