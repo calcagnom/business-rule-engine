@@ -38,7 +38,7 @@ export default class Rule {
             eventResult.push({type: EventTypeEnum.success});
           }
           if (hasCustom) {
-            eventResult.push(...decision.event.types.map((type: EventTypeEnum | string) => ({type, params: decision.event.params})));
+            eventResult.push(...decision.event!.types.map((type: EventTypeEnum | string) => ({type, params: decision.event!.params})));
           }
         }
         if (!decisionResult && requireFail) {

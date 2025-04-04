@@ -64,8 +64,14 @@ export class Condition {
       }
     } else {
       const conditionFact = this.condition as IFactCondition;
-      const fact: IFact = facts.get(conditionFact.fact);
+      const fact: IFact | undefined = facts.get(conditionFact.fact);
+      if (!fact) {
+        throw new Error(`Condition: ${conditionFact.fact} not found`);
+      }
       const operator = operators.get(`${fact.type}.${conditionFact.operator}`);
+      if (!operator) {
+        throw new Error(`Condition: ${conditionFact.operator} not found`);
+      }
       return operator.evaluate(jsonValue[fact.name], conditionFact.value, conditionFact.params);
     }
   }

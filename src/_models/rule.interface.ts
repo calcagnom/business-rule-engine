@@ -1,6 +1,7 @@
-import {IFact} from './fact.interface';
-import {ICondition} from './condition.interface';
-import {IEvent} from './event.interface';
+import type {IFact} from './fact.interface.js';
+import type {ICondition} from './condition.interface.js';
+import type {IEvent} from './event.interface.js';
+
 
 export interface IRule {
   name?: string;

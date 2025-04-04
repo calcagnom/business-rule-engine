@@ -1,11 +1,12 @@
-import {ConditionOperatorsEnum} from '../_enums/condition-operators.enum';
+import type {ConditionOperatorsEnum} from '../_enums/condition-operators.enum.js';
 import {
   ArrayConditions,
   BooleanConditions,
   DateConditions,
-  NumberConditions, ObjectConditions,
+  type NumberConditions, ObjectConditions,
   StringConditions
-} from '../_enums/fact-operators.enum';
+} from '../_enums/fact-operators.enum.js';
+
 
 export type ICondition = {
   [index in ConditionOperatorsEnum]: (IFactCondition | ICondition)[];

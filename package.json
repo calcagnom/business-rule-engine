@@ -1,6 +1,6 @@
 {
   "name": "business-rule-engine",
-  "version": "0.0.0-beta",
+  "version": "0.0.1-beta",
   "description": "an engine for rules evaluation",
   "main": "dist/index.ts",
   "scripts": {
